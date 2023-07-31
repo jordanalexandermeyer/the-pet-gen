@@ -86,7 +86,6 @@ export enum TagId {
   ANIMAL_HERMIT_CRAB = "animal_hermit_crab",
 
   // Age
-  AGE_BABY = "age_baby",
   AGE_YOUNG = "age_young",
   AGE_MIDDLE_AGE = "age_middle_age",
   AGE_OLD = "age_old",

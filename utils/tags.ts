@@ -136,12 +136,6 @@ export const tags: { [key in TagId]: Tag } = {
   },
 
   // Age
-  [TagId.AGE_BABY]: {
-    name: "baby",
-    prompt: "baby",
-    negativePrompt: "",
-    selected: false,
-  },
   [TagId.AGE_YOUNG]: {
     name: "young",
     prompt: "young",
@@ -336,7 +330,6 @@ const ageGroup = {
     required: false,
     name: "Age",
     tags: {
-      [TagId.AGE_BABY]: tags[TagId.AGE_BABY],
       [TagId.AGE_YOUNG]: tags[TagId.AGE_YOUNG],
       [TagId.AGE_MIDDLE_AGE]: tags[TagId.AGE_MIDDLE_AGE],
       [TagId.AGE_OLD]: tags[TagId.AGE_OLD],
@@ -454,9 +447,6 @@ export const getDefaultGenerateTagMap = () => {
   ].selected = true
   defaultTagMap[ModelId.BASE].groups[GroupId.CLOTHING].tags[
     TagId.CLOTHING_HAT
-  ].selected = true
-  defaultTagMap[ModelId.BASE].groups[GroupId.AGE].tags[
-    TagId.AGE_BABY
   ].selected = true
   defaultTagMap[ModelId.BASE].groups[GroupId.STYLE].tags[
     TagId.STYLE_PHOTOGRAPH

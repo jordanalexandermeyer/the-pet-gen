@@ -38,7 +38,7 @@ const getEncodedTags = () => {
         "animal_tarantula",
         "animal_hermit_crab",
       ]),
-      age: ["age_baby", "age_young", "age_middle_age", "age_old"],
+      age: ["age_young", "age_middle_age", "age_old"],
       subjects: [
         "subjects_one_pet",
         "subjects_two_pets",
