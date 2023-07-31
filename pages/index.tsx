@@ -182,7 +182,7 @@ export default function Home() {
           {noMoreImages && <div>No more images</div>}
         </div>
       </div>
-      <div className="fixed bottom-20 sm:bottom-14 w-full flex justify-center px-4">
+      {/* <div className="fixed bottom-20 sm:bottom-14 w-full flex justify-center px-4">
         {isFirehoseOn ? (
           <button
             onClick={() => setIsFirehoseOn(false)}
@@ -198,7 +198,7 @@ export default function Home() {
             Open firehose
           </button>
         )}
-      </div>
+      </div> */}
     </Layout>
   )
 }

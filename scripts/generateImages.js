@@ -4,7 +4,7 @@ import fetch from "node-fetch"
 let count = 0
 
 const getEncodedTags = () => {
-  const randomFromList = (list: string[]) => {
+  const randomFromList = (list) => {
     const random = []
     const randomElement = list[Math.floor(Math.random() * list.length)]
     random.push(randomElement)
@@ -38,12 +38,12 @@ const getEncodedTags = () => {
         "animal_tarantula",
         "animal_hermit_crab",
       ]),
-      age: ["age_young", "age_middle_age", "age_old"],
-      subjects: [
+      age: randomFromList(["age_young", "age_middle_age", "age_old"]),
+      subjects: randomFromList([
         "subjects_one_pet",
         "subjects_two_pets",
         "subjects_multiple_pets",
-      ],
+      ]),
       setting: randomFromList([
         "setting_beach",
         "setting_park",
@@ -64,12 +64,12 @@ const getEncodedTags = () => {
         "facial_expression_nervous",
         "facial_expression_laughing",
       ]),
-      clothing: [
+      clothing: randomFromList([
         "clothing_shirt",
         "clothing_pants",
         "clothing_shoes",
         "clothing_hat",
-      ],
+      ]),
     },
   }
 

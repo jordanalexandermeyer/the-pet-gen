@@ -236,32 +236,32 @@ export const tags: { [key in TagId]: Tag } = {
   // Facial expression
   [TagId.FACIAL_EXPRESSION_HAPPY]: {
     name: "happy",
-    prompt: "happy, ((detailed face))",
-    negativePrompt: "(deformed face)",
+    prompt: "happy",
+    negativePrompt: "",
     selected: false,
   },
   [TagId.FACIAL_EXPRESSION_SAD]: {
     name: "sad",
-    prompt: "sad face, (sad eyes), ((detailed face))",
-    negativePrompt: "(happy), (smile), smiling, (deformed face)",
+    prompt: "sad",
+    negativePrompt: "",
     selected: false,
   },
   [TagId.FACIAL_EXPRESSION_ANGRY]: {
     name: "angry",
-    prompt: "angry face, mad, ((detailed face))",
-    negativePrompt: "playful, (happy), (deformed face), (weird eyes)",
+    prompt: "angry",
+    negativePrompt: "",
     selected: false,
   },
   [TagId.FACIAL_EXPRESSION_NERVOUS]: {
     name: "nervous",
-    prompt: "nervous face ((detailed face))",
-    negativePrompt: "(deformed face)",
+    prompt: "nervous",
+    negativePrompt: "",
     selected: false,
   },
   [TagId.FACIAL_EXPRESSION_LAUGHING]: {
     name: "laughing",
-    prompt: "laughing, (laughing face), ((detailed face))",
-    negativePrompt: "(sad), (deformed face)",
+    prompt: "laughing",
+    negativePrompt: "",
     selected: false,
   },
 
